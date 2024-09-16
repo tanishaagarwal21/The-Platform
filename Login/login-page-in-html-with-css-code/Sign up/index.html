@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>PLATFORM Registration.</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+  <script src="https://kit.fontawesome.com/e2ac9cc532.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class='signup-container'>
+  <div class='left-container'>
+    <img src = "Images/register_image.png">
+    <video autoplay  width="240" height="240"
+      <source src="Images/platform.mp4" type="video/mp4">
+      </video>
+    <div class='form'>
+      <img src="">
+    </div>
+  </div>
+  <div class='right-container'>
+    <header>
+      <h1>Create a new account</h1>
+      <div class='set'>
+        <div class='Name'>
+          <label for='Name'>Name</label>
+          <input id='Name' placeholder="Your-Name" type="text" required />
+        </div>
+        <div class='photo'>
+          <button id='upload'>
+            <i class='fas fa-camera-retro'></i>
+          </button>
+          <label for='upload'>Upload a photo</label>
+        </div>
+      </div>
+      <div class='set'>
+        <div class='E-mail'>
+          <label for='E-mail'>E-mail</label>
+          <input id='E-mail' placeholder="E-mail" type="email" required />
+        </div>
+       <div class='birthday'>
+  <label for='birthday'>Birthday</label>
+  <input id='birthday' placeholder='MM/DD/YYYY' type='text' required />
+</div>
+
+<script>
+  $(document).ready(function() {
+    // Apply the datepicker to the birthday input field
+    $('#birthday').datepicker({
+      dateFormat: 'mm/dd/yy', // Format the date as MM/DD/YYYY
+      changeMonth: true, // Allow month dropdown
+      changeYear: true, // Allow year dropdown
+      yearRange: '1900:2030', // Limit the year range from 1900 to 2030 (you can adjust this as needed)
+    });
+  });
+</script>
+      </div>
+      <div class='set'>
+        <div class='gender'>
+          <label for='gender-female'>Gender</label>
+          <div class='radio-container'>
+            <input checked='' id='gender-female' name='gender' type='radio' value='female'>
+            <label for='gender-female'>Female</label>
+            <input id='gender-male' name='gender' type='radio' value='male'>
+            <label for='gender-male'>Male</label>
+            <input id='gender-custom' name='gender' type='radio' value='Custom'>
+            <label for = 'gender-custom'>Custom</label>
+          </div>
+        </div>
+        <div class='Mobile'>
+          <label for='Mobile'>Mobile No.</label>
+            <input id='Mobile' placeholder="Mobile" type="tel" required />
+        </div>
+      </div>
+      <div class='Username'>
+        <label for='Username'>Username</label>
+        <input id='Username' placeholder="Username" type="text" required />
+      </div>
+      <div class='Password'>
+        <label for='Password'>Password</label>
+        <input id='Password' placeholder="Create Password" type="text" required />
+      </div>
+    </header>
+    <footer>
+      <div class='set'>
+        <button id='back'>Back</button>
+        <button id='next'>Next</button>
+      </div>
+    </footer>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
